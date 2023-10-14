@@ -14,11 +14,9 @@ This project is an api endpoint for the Vite app which is designed to allow  use
 
 ## Configuration
 
+1. Set the MongoDB cloud url  in connection.js file
 
-
-1. Set the cloud url or local mongo db url in connection.js file
-
-3.  Create .env file and set following environment variables 
+2.  Create .env file and set following environment variables 
   
      - for cloud mongo db
        - MONGO_USER
