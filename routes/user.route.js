@@ -54,7 +54,7 @@ userRoute.post("/login", async (req, res) => {
     }
     else {
         bcrypt.compare(password, login.password, (err, result) => {
-            console.log(err,result)
+            
             if (err) return;
             if (result === true) {
                 const token = jwt.sign({ user: username }, process.env.SECRET_KEY, { expiresIn: "5d" });
